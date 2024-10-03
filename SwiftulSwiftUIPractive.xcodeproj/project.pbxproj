@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		24002A682CAE833F0030AFB1 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 24002A672CAE833F0030AFB1 /* SDWebImageSwiftUI */; };
+		24002A772CAE899A0030AFB1 /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = 24002A762CAE899A0030AFB1 /* SwiftfulUI */; };
+		24002A7A2CAE8A320030AFB1 /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = 24002A792CAE8A320030AFB1 /* SwiftfulRouting */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		24002A502CAE81910030AFB1 /* SwiftulSwiftUIPractive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftulSwiftUIPractive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24002A772CAE899A0030AFB1 /* SwiftfulUI in Frameworks */,
+				24002A7A2CAE8A320030AFB1 /* SwiftfulRouting in Frameworks */,
+				24002A682CAE833F0030AFB1 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +74,9 @@
 			);
 			name = SwiftulSwiftUIPractive;
 			packageProductDependencies = (
+				24002A672CAE833F0030AFB1 /* SDWebImageSwiftUI */,
+				24002A762CAE899A0030AFB1 /* SwiftfulUI */,
+				24002A792CAE8A320030AFB1 /* SwiftfulRouting */,
 			);
 			productName = SwiftulSwiftUIPractive;
 			productReference = 24002A502CAE81910030AFB1 /* SwiftulSwiftUIPractive.app */;
@@ -94,6 +106,11 @@
 			);
 			mainGroup = 24002A472CAE81910030AFB1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				24002A662CAE833F0030AFB1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				24002A752CAE899A0030AFB1 /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
+				24002A782CAE8A320030AFB1 /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 24002A512CAE81910030AFB1 /* Products */;
 			projectDirPath = "";
@@ -257,14 +274,14 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.trung.-SwiftulSwiftUIPractive.SwiftulSwiftUIPractive";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trung.SwiftulSwiftUIPractive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -285,14 +302,14 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.trung.-SwiftulSwiftUIPractive.SwiftulSwiftUIPractive";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trung.SwiftulSwiftUIPractive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -322,6 +339,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		24002A662CAE833F0030AFB1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.2;
+			};
+		};
+		24002A752CAE899A0030AFB1 /* XCRemoteSwiftPackageReference "SwiftfulUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		24002A782CAE8A320030AFB1 /* XCRemoteSwiftPackageReference "SwiftfulRouting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulRouting";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		24002A672CAE833F0030AFB1 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24002A662CAE833F0030AFB1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		24002A762CAE899A0030AFB1 /* SwiftfulUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24002A752CAE899A0030AFB1 /* XCRemoteSwiftPackageReference "SwiftfulUI" */;
+			productName = SwiftfulUI;
+		};
+		24002A792CAE8A320030AFB1 /* SwiftfulRouting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24002A782CAE8A320030AFB1 /* XCRemoteSwiftPackageReference "SwiftfulRouting" */;
+			productName = SwiftfulRouting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 24002A482CAE81910030AFB1 /* Project object */;
 }

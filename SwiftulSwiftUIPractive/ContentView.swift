@@ -1,11 +1,6 @@
-//
-//  ContentView.swift
-//  SwiftulSwiftUIPractive
-//
-//  Created by sotatek on 3/10/24.
-//
-
 import SwiftUI
+import SwiftfulUI
+import SwiftfulRouting
 
 struct ContentView: View {
     var body: some View {
